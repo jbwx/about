@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<title>Not found</title>
+<html>
+<head>
+<style>
+/* beginning */
+.monotext {
+  color: #000000;
+  white-space: pre;
+  font-size: 13px;
+  padding: 0px 0px;
+  position: left;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.btext {
+  color: #000001;
+  white-space: pre;
+  font-size: 13px;
+  padding: 0px 0px;
+  position: fixed;
+  bottom: 8px;
+  width: 100%;
+  text-align: bottom;
+}
+</style>
+</head>
+<body>
+
+<tt>
+ <div class="monotext">This page doesn't exist, or I'm still working on it.</div>
+ <a href="https://github.com/jw021/Page" target="_blank">Go home</a>
+
+</tt>
+
+<tt> <div class="btext"><p>Page generated <span id="datetime"></span></p></div></tt>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+</body>
+</html> 

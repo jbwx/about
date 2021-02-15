@@ -16,6 +16,8 @@ rem // break case //
 if %n%==9 goto c
 goto b
 
+rem // the main loop for user input //
+
 :c
 echo It's P%cp%'s choice:
 rem // prompts user for choice between 1-9 //

@@ -6,7 +6,7 @@ set m=O & rem // switches between X and O //
 set cp=1 & rem // current player //
 set n=0 & rem // counter for upcoming loop //
 
-rem // Loop for filling the square variables //
+rem // Loop for filling the square variables (a1-a9) //
 :b
 set /a n=%n%+1
 set a%n%=Û

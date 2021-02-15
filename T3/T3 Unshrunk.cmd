@@ -2,9 +2,9 @@
 cls
 @echo off
 setlocal enabledelayedexpansion
-set m=O
+set m=O & rem // switches between X and O //
 set cp=1 & rem // current player //
-set n=0
+set n=0 & rem // counter for upcoming loop //
 
 rem // Loop for filling the square variables //
 :b

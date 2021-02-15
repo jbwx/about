@@ -3,16 +3,19 @@ cls
 @echo off
 setlocal enabledelayedexpansion
 set m=O
-set cp=1
+set cp=1 & rem // current player //
 set n=0
+
 rem // Loop for filling the square variables //
 :b
 set /a n=%n%+1
 set a%n%=Û
 set /a i=%n% %% 3
 if %i%==0 echo ÛÛÛ
+rem // break case //
 if %n%==9 goto c
 goto b
+
 :c
 echo It's P%cp%'s choice:
 rem // prompts user for choice between 1-9 //
@@ -42,7 +45,7 @@ if %cp%==2 set cp=1& set m=O
 goto c
 
 :w
-rem // win section //
+rem // win //
 echo P%cp% wins.
 pause
 goto s

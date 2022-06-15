@@ -1,40 +1,80 @@
 <!DOCTYPE html>
 <title>Jacob Westra</title>
-<!-- Updated as of 9/21/21 -->
-<style>
-div {
-	max-width: 30%;
-	text-align:justify;
-	position:relative;
-	top: 10vh;
-}
-	
-[contenteditable] {
-  	outline: 0px solid transparent;
+<!-- Updated as of 6/15/22 -->
+<!-- Style attributes arranged in alphabetical order -->
+<style> 
+* {
+  box-sizing: border-box;
 }
 
+leftcolumn {
+	cursor: default;
+	float: left;
+	left: 25%;
+	padding: 10px;
+	position:relative;
+	text-align:justify;
+	top: 10vh;
+ 	width: 25%;
+  	
+}
+
+rightcolumn {
+  	cursor: default;
+	float: right;
+  	padding: 10px;
+	position: relative;
+	right: 25%;
+	text-align: right;
+	top: 10vh;
+ 	width: 25%;
+}
+
+.link {
+  background-color: white;
+  border: none;
+  color:black; 
+  cursor: default;
+  display: inline-block;
+  text-decoration:none;
+}
+
+.link:hover::after {
+  content:" <";
+  text-align:left;
+}
+
+.link:after{
+  content:"‎‎‎‎‎‎‎ ‎ ‎ ";
+}
+	
 </style>
+
 <html>
 <tt>
-<main contenteditable="true" autofocus="autofocus">
+<main>
 <center>
-<div>
-Hello! Welcome to my page. I am Jacob Westra, a 
-sophomore studying computer science at Calvin 
-University in Grand Rapids, MI. This is my personal 
-site containing a short about-me and some fun personal 
-projects, including T3.cmd, CaMEO, and a few other 
-things.
-<p> <br>
-<a contenteditable="false" style="text-decoration:none;" href="https://jw021.github.io/Page/T3.html" target="_self">T3.cmd</a>
-<p>	
-<a contenteditable="false" style="text-decoration:none;" href="https://jw021.github.io/CaMEO" target="_self">CaMEO Index</a>
-<p>
-<a contenteditable="false" style="text-decoration:none;" href="https://jw021.github.io/Page/404.html" target="_self">The Case For Venusian Skies: A Better Hope than Mars</a>
-<p>	
-<a contenteditable="false" style="text-decoration:none;" href="mailto:jacobwestra0@gmail.com" target="_self">Resume</a>
-</main>
-</div>
+<br>
+About me
+<leftcolumn>
+Hello! I am Jacob Westra, a junior studying computer science at Calvin University in Grand Rapids, Michigan. 
+I enjoy the natural beauty of Michigan, especially during the summer and fall. Northern Michigan is one of 
+my favorite places. On this page, you can find links to some personal projects I've worked on, and/or plans 
+for upcoming projects.
+</leftcolumn>
+
+<rightcolumn>
+<a class="link" href="https://jbwx.github.io/T3/" target="_self">T3.cmd<a>
+<br>	
+<a class="link" href="https://jbwx.github.io/CaMEO/" target="_self">CaMEO Index<a>
+<br>
+<a class="link" href="https://jbwx.github.io/SimpleWireframe/" target="_self">Simple wireframe program<a>
+<br>
+<a class="link" href="https://jbwx.github.io/Terrain/" target="_self">Branchless, constant-time terrain generation<a>
+<br>
+<a class="link" href="mailto:jacobwestra0@gmail.com" target="_self">Resume</a>
+</rightcolumn>
 </center>
+</main>
 </tt>
 <html>
